@@ -44,11 +44,3 @@ r2 = r2_score(y_test, y_pred)
 print(f'RMSE: {rmse:.2f}')
 print(f'R^2: {r2:.2f}')
 
-# Plotting the predicted vs actual values
-plt.figure(figsize=(10, 6))
-plt.scatter(y_test, y_pred, alpha=0.3)
-plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], '--r')
-plt.xlabel('Actual')
-plt.ylabel('Predicted')
-plt.title('Actual vs Predicted House Prices')
-plt.show()
